@@ -1,7 +1,6 @@
 package com.example.zaven.gallery;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 
@@ -12,11 +11,7 @@ public class FullImageActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.full_image);
 
-        
-        Intent i = getIntent();
-
-        
-        int position = i.getExtras().getInt("id");
+        int position = getIntent().getIntExtra("id", 0);
         ImageAdapter imageAdapter = new ImageAdapter(this);
 
         ImageView imageView = (ImageView) findViewById(R.id.full_image_view);
