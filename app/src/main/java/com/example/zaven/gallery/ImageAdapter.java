@@ -48,7 +48,6 @@ public class ImageAdapter extends BaseAdapter {
         return imageView;
     }
 
-    // references to our images
     public Integer[] mThumbIds = {
             R.drawable.sample_2, R.drawable.sample_1,
             R.drawable.sample_1, R.drawable.sample_2,
